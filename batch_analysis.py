@@ -46,7 +46,9 @@ import math
 # animals_to_analyze = [''.join(['CL-', f"{x:02}"]) for x in range(13, 30)] + [''.join(['LFP', f"{x:02}"]) for x in range(16, 22)]
 # animals_to_analyze = [''.join(['D1opto-', str(x)]) for x in range(10,15)] + [''.join(['D2opto-0', str(x)]) for x in range(8,10)] + [''.join(['D2opto-', str(x)]) for x in range(10,13)]
 # animals_to_analyze = [''.join(['DAopto-0', str(x)]) for x in range(1,10)] + ['DAopto-10']
-animals_to_analyze = ['SP120', 'SP121', 'SP122', 'SP123', 'SP124', 'SP126', 'SP132', 'SP133', 'SP134', 'SP135', 'SP136', 'SP137']
+animals_to_analyze = ['SP120', 'SP121', 'SP122', 'SP124', 'SP126', 'SP132', 'SP133', 'SP134', 'SP135', 'SP136', 'SP137']
+# animals_to_analyze = ['SP120', 'SP121', 'SP122', 'SP126', 'SP132', 'SP133', 'SP134', 'SP135', 'SP136', 'SP137']
+
 
 # Name of batch
 # batch_name = 'D2-caspase_Apr2021'
@@ -70,6 +72,8 @@ animals_to_analyze = ['SP120', 'SP121', 'SP122', 'SP123', 'SP124', 'SP126', 'SP1
 # batch_name = 'D1andD2opto-learning_Dec21'
 # batch_name = 'DAoptostimulation_Mar22'
 batch_name = 'D-AP5-Chronic-Infusion-SP120-137_Aug23'
+# batch_name = 'D-AP5-Chronic-Infusion-SP120-137_Aug23_outliers_removed'
+
 
 # create empty list
 DataFrames = []
@@ -99,7 +103,9 @@ DataFrames = []
 # eg_list = list(np.repeat('Lesion', 12)) + list(np.repeat('Control', 11))# + list(np.repeat('Control-LFP', 6))
 # eg_list = list(np.repeat('optoinhibition', 10))
 # eg_list = list(np.repeat('DAoptostimulation', 10))
-eg_list = list(np.repeat('D-AP5', 5)) + list(np.repeat('Control', 6))
+eg_list = list(np.repeat('D-AP5', 5)) + list(np.repeat('Saline', 6))
+# eg_list = list(np.repeat('D-AP5', 4)) + list(np.repeat('Control', 6))
+
 
 BpodProtocol = '/Two_Alternative_Choice/'
 # Main directory of behavioural data to be saved, now computer dependent
