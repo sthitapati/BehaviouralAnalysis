@@ -885,7 +885,7 @@ def get_general_right_bias(df_one, df_two):
 DATA_FOLDER_PATHS = {
     'nailgun': '/home/hernandom/data',
     'HMVergara-Laptop': '/mnt/c/Users/herny/Desktop/SWC/Data',
-    'sthitapati-lab': '/mnt/Data'
+    'sthitapati-lab': '/mnt/f',
 }
 
 
